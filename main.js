@@ -23,7 +23,7 @@ function createWindow() {
   loadMainWindow(win);
 
   machineUuid.generateDeviceUuid()
-  // win.webContents.openDevTools()
+  win.webContents.openDevTools()
   win.on('closed', () => {
     win = null
   })
