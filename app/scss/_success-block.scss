@@ -1,0 +1,85 @@
+.success-block {
+  margin-top: 100px;
+  .success-icon {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 50px;
+  }
+  .dont-forget {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    .item {
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+    .arrow-down-icon {
+      width: 62px;
+      height: 74px;
+      margin-top: 40px;
+      fill: #B6C4E3;
+    }
+    .take-card {
+      width: 400px;
+    }
+    .take-ticket {
+      width: 300px;
+      margin-top: 43px;
+    }
+  }
+  .info-text {
+    width: 350px;
+    margin: 50px auto 0;
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+    color: #a9b0c4;
+    .attention {
+      font-family: 'GothamPro-Medium';
+    }
+    .btn {
+      width: 83%;
+      margin-top: 80px;
+    }
+  }
+}
+
+.fail-pay-block {
+  margin: 200px 0;
+  font-size: 24px;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  p {
+    width: 640px;
+    margin: auto;
+  }
+  .attention {
+    margin-top: 30px;
+  }
+  .fail-icon {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 50px;
+  }
+  .hr {
+    width: 300px;
+    margin: 50px auto;
+    border-top: 1px solid #0e1835;
+    border-bottom: 1px solid #35415f;
+  }
+  .btn {
+    margin-top: 60px;
+    padding: 0 38px;
+  }
+}

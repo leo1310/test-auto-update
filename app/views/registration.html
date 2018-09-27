@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/terminal-styles.css">
+  <title>Terminal</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="../img/img_logo-uz.png" alt="logo-uz">
+        <!-- <div class="train_logo">LOGO</div> -->
+      </div>
+      <div class="time"></div>
+      <div class="lang">
+        <a href="#" class="lang__uk"></a>
+        <a href="#" class="lang__en"></a>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <div class="registration">
+        <h3 translate="register_device"></h3>
+        <div class="registration__block">
+          <label for="registration-number" translate="registration_number"></label>
+          <input type="text" name="registration-number" id="js-uuid-input">
+          <div class="registration-select">
+            <label for="device-type" translate="select_device_type"></label>
+            <select name="device-type" id="js-device-type-input">
+              <option value="terminal" translate="terminal"></option>
+              <option value="cashdesk" translate="cashdesk"></option>
+            </select>
+          </div>
+          <button class="btn" id="js-uuid-send" translate="register"></button>
+          <div class="registration__line"></div>
+        </div>
+      </div>
+      <div class="registration__unic">
+        <label class="registration__yellow" translate="unique_device_number"></label>
+        <div class="registration__unic-number" id="js-devise-uuid"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="timetable-block">
+    <h3 translate="schedule"></h3>
+    <div class="btn-group">
+      <button class="btn-group--item active" id="js-to-boryspil-btn" translate="kyivboryspil"></button>
+      <button class="btn-group--item" id="js-from-boryspil-btn" translate="boryspilkyiv"></button>
+    </div>
+      <div class="timetable--heading">
+        <p translate="departure" class="departure"></p>
+        <p translate="in_way" class="roadtime"></p>
+        <p translate="arrival" class="arrival"></p>
+      </div>
+    <div class="timetable js-to-boryspil-content">
+      <div class="js-to-boryspil-content-insert">
+      </div>
+    </div>
+    <div class="timetable js-from-boryspil-content" style="display: none;">
+      <div class="js-from-boryspil-content-insert">
+      </div>
+    </div>
+  </div>
+  <div class="btn-block">
+    <button class="btn btn__back" id="js-main-page" translate="on_main"></button>
+    <button class="btn btn__forward" id="js-date-select" translate="buy_ticket"></button>
+  </div>
+</div>
+<script src="../../js/schedule.js"></script>

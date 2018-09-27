@@ -1,0 +1,242 @@
+{
+  "40_minutes": {
+    "uk": "40 хвилин",
+    "eng": "40 minutes"
+  },
+  "schedule": {
+    "uk": "Дивитися розклад",
+    "eng": "View schedule"
+  },
+  "buy_ticket": {
+    "uk": "Придбати квиток",
+    "eng": "Buy ticket"
+  },
+  "main_title": {
+    "uk": "Продаж квитків<br> на потяг Київ-Пас - <br>Аеропорт Бориспіль",
+    "eng": "Buy tickets for<br>the Kyiv-Pas train - <br> Boryspil airport"
+  },
+  "select_date": {
+    "uk": "Обрати дату поїздки",
+    "eng": "Pick a travel date"
+  },
+  "ticket_info": {
+    "uk": "Квиток дійсний протягом 24-х годин на <br>обрану дату",
+    "eng": "The ticket is valid for 24 hours on <br>the selected date"
+  },
+  "on_main": {
+    "uk": "На головну",
+    "eng": "To home page"
+  },
+  "continue": {
+    "uk": "Продовжити",
+    "eng": "Continue"
+  },
+  "repeat_payment": {
+    "uk": "Повторити платіж",
+    "eng": "Repeat payment"
+  },
+  "fail_payment": {
+    "uk": "Не вдалося виконати платіж: ",
+    "eng": "Payment failed: "
+  },
+  "payments_online": {
+    "uk": "Переконайтеся в тому, що ваша картка дозволяє здійснювати платежі через інтернет.",
+    "eng": "Make sure your card supports online payments."
+  },
+  "try_again": {
+    "uk": "Будь ласка, спробуйте здійснити платіж ще раз або зверніться до спеціалізованих кас Укрзалізниці для покупки квитків за готівку",
+    "eng": "Please try to make payment again or contact specialised Ukrzaliznytsia booking offices to buy tickets with cash."
+  },
+  "back": {
+    "uk": "Назад",
+    "eng": "Back"
+  },
+  "accepted_cards": {
+    "uk": "Приймаються картки",
+    "eng": "Cards are accepted"
+  },
+  "time_pay": {
+    "uk": "Час на оплату",
+    "eng": "Payment period"
+  },
+  "insert_card": {
+    "uk": "Для оплати вставте банківську картку",
+    "eng": "To pay, insert a bank card"
+  },
+  "wait": {
+    "uk": "Зачекайте",
+    "eng": "Hold on"
+  },
+  "processing": {
+    "uk": "Триває обробка …",
+    "eng": "Processing …"
+  },
+  "confirm": {
+    "uk": "Підтвердити",
+    "eng": "Confirm"
+  },
+  "enter_pin": {
+    "uk": "Введіть PIN код",
+    "eng": "Enter your PIN"
+  },
+  "payment_successful": {
+    "uk": "Оплата пройшла успішно",
+    "eng": "Payment success"
+  },
+  "pickup_card": {
+    "uk": "Не забудьте забрати <br>вашу картку",
+    "eng": "Do not forget to pick up <br>your card"
+  },
+  "pickup_tickets": {
+    "uk": "Не забудьте забрати <br>ваші квитки",
+    "eng": "Do not forget to pick up <br>your tickets"
+  },
+  "pay_attention": {
+    "uk": "Зверніть увагу!",
+    "eng": "Pay attention!"
+  },
+  "single_travel": {
+    "uk": "Квиток дійсний для разового проїзду",
+    "eng": "Ticket is valid for single ride"
+  },
+  "select_number_tickets": {
+    "uk": "Вибрати кількість квитків",
+    "eng": "Select the number of tickets"
+  },
+  "child_note": {
+    "uk": "Для дітей до 6 років проїзд безкоштовний",
+    "eng": "Children under 6 years travel for free"
+  },
+  "go_payment": {
+    "uk": "Перейти до оплати",
+    "eng": "Proceed to checkout"
+  },
+  "card_payment": {
+    "uk": "Оплата карткою",
+    "eng": "Card payment"
+  },
+  "cash_payment": {
+    "uk": "Оплата готівкою",
+    "eng": "Cash payment"
+  },
+  "amount_tickets": {
+    "uk": "Всього до оплати:",
+    "eng": "Total:"
+  },
+  "tickets_count": {
+    "uk": "Кількість квитків: ",
+    "eng": "Tickets count: "
+  },
+  "total": {
+    "uk": "Всього до оплати: ",
+    "eng": "Total: "
+  },
+  "schedule": {
+    "uk": "Розклад руху",
+    "eng": "Schedule"
+  },
+  "kyivboryspil": {
+    "uk": "Київ - Бориспіль",
+    "eng": "Kyiv - Boryspil"
+  },
+  "boryspilkyiv": {
+    "uk": "Бориспіль - Київ",
+    "eng": "Boryspil - Kyiv"
+  },
+  "departure": {
+    "uk": "Відправлення",
+    "eng": "Departure"
+  },
+  "in_way": {
+    "uk": "В дорозі",
+    "eng": "On the way"
+  },
+  "arrival": {
+    "uk": "Прибуття",
+    "eng": "Arrival"
+  },
+  "min": {
+    "uk": " хв",
+    "eng": " min"
+  },
+  "uah": {
+    "uk": "грн.",
+    "eng": "uah"
+  },
+  "print_tickets": {
+    "uk": "Роздрукувати квитки",
+    "eng": "Print tickets"
+  },
+  "received_cash": {
+    "uk": "Я отримав(ла) гроші від клієнта",
+    "eng": "I got the money from the client"
+  },
+  "take_cash_from_customer": {
+    "uk": "Підтвердіть отримання грошей від клієнта",
+    "eng": "Confirm receipt of money from the client"
+  },
+  "authorization_success": {
+    "uk": "Пристрій успішно зареєстрований",
+    "eng": "The device is successfully registered"
+  },
+  "entry": {
+    "uk": "Вхід",
+    "eng": "Login"
+  },
+  "for_login_label": {
+    "uk": "Для входу введіть Ваш логін та пароль",
+    "eng": "Enter your login and password to login"
+  },
+  "login": {
+    "uk": "Логін",
+    "eng": "Login"
+  },
+  "password": {
+    "uk": "Пароль",
+    "eng": "Password"
+  },
+  "login_btn": {
+    "uk": "Увійти",
+    "eng": "Login"
+  },
+  "register_device": {
+    "uk": "Для початку роботи зареєструйте пристрій",
+    "eng": "Register your device to get started"
+  },
+  "registration_number": {
+    "uk": "Введіть реєстраційний номер",
+    "eng": "Enter registration number"
+  },
+  "select_device_type": {
+    "uk": "Виберіть тип пристрою",
+    "eng": "Select device type"
+  },
+  "terminal": {
+    "uk": "Термінал",
+    "eng": "Terminal"
+  },
+  "cashdesk": {
+    "uk": "Каса",
+    "eng": "Cashdesk"
+  },
+  "register": {
+    "uk": "Зареєструвати",
+    "eng": "Register"
+  },
+  "unique_device_number": {
+    "uk": "Унікальний номер пристрою",
+    "eng": "Unique device number"
+  },
+  "tech-error-info": {
+    "uk": "Вибачте, виникла технічна несправність",
+    "eng": "Sorry, there was a technical malfunction"
+  },
+  "tech-error_desc": {
+    "uk": "Спробуйте повторити спробу пізніше або придбайте квитки в касі чи через Інтернет.",
+    "eng": "Try retry later or purchase tickets at checkout or online."
+  },
+  "try_again": {
+    "uk": "Повторити спробу",
+    "eng": "Retry"
+  }
+}

@@ -1,0 +1,47 @@
+.timetable-block {
+  width: 780px;
+  margin: 50px auto 0;
+  h3 {
+    margin-bottom: 50px;
+  }
+  + .btn-block {
+    margin-top: 100px;
+    .btn__blue {
+      width: 360px;
+    }
+  }
+}
+
+.timetable {
+  height: 1093px;
+  margin-top: 50px;
+  overflow: hidden;
+  &--heading,
+  &--row {
+    width: 78%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #374460;
+  }
+  &--heading {
+    padding-bottom: 15px;
+    color: #7A88A8;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  &--row {
+    align-items: center;
+    height: 80px;
+    font-size: 32px;
+    color: #7A88A8;
+    line-height: 81px;
+    .time {
+      color: #fff;
+    }
+  }
+  .roadtime {
+    width: 170px;
+  }
+}

@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="pagination">
+    <span class="step disabled"></span>
+    <span class="step disabled"></span>
+    <span class="step active"></span>
+    <span class="step"></span>
+  </div>
+  <div class="payment-block">
+    <h3 translate="select_number_tickets"></h3>
+    <div class="total-cost payment-total-cost">
+      <p>
+        <span translate="tickets_count"></span>
+        <span id="js-tickets-count">1</span>
+      </p>
+      <p>
+        <span translate="total"></span>
+      </p>
+      <p class="price">
+        <price id="js-price">80.00</price>
+        <span translate="uah"></span>
+      </p>
+    </div>
+    <div class="checkbox__container">
+      <label class="check-container">
+        <span translate="received_cash"></span>
+        <input type="checkbox" id="js-received-cash">
+        <span class="checkmark"></span>
+      </label>
+      <button class="btn" id="js-print-tickets" translate="print_tickets"></button>
+    </div>
+  </div>
+  <div class="btn-block">
+    <button class="btn btn__back" id="js-back" translate="back"></button>
+  </div>
+</div>
+<script src="../../js/cash-payment.js"></script>

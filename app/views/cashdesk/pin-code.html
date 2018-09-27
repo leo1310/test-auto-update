@@ -1,0 +1,42 @@
+ <div class="container">
+  <div class="pagination">
+    <span class="step disabled"></span>
+    <span class="step disabled"></span>
+    <span class="step disabled"></span>
+    <span class="step active"></span>
+  </div>
+  <div class="timer-block">
+    <p translate="time_pay"></p>
+    <div class="timer" id="js-timer">
+      <div id="timer_inp">10</div>
+      <div class="timer--item">14</div>
+      <div>:</div>
+      <div class="timer--item">56</div>
+    </div>
+  </div>
+  <div class="pin-code-block">
+    <h3 translate="enter_pin"></h3>
+    <div class="lock">
+      <input type="password" placeholder="XXXX" readonly id="js-pin-code">
+      <div class="dial">
+        <button class="dial--button" value="1">1</button>
+        <button class="dial--button" value="2">2</button>
+        <button class="dial--button" value="3">3</button>
+        <button class="dial--button" value="4">4</button>
+        <button class="dial--button" value="5">5</button>
+        <button class="dial--button" value="6">6</button>
+        <button class="dial--button" value="7">7</button>
+        <button class="dial--button" value="8">8</button>
+        <button class="dial--button" value="9">9</button>
+        <button class="dial--button" value=""></button>
+        <button class="dial--button" value="0">0</button>
+        <button class="dial--button" value="‹">‹</button>
+      </div>
+      <button class="btn" id="js-confirm" disabled="disabled" translate="confirm"></button>
+    </div>
+  </div>
+  <div class="btn-block">
+    <button class="btn btn__back pin-code__btn_back" id="js-back" translate="back"></button>
+  </div>
+</div>
+<script src="../../js/pin-code.js"></script>

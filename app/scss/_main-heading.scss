@@ -1,0 +1,111 @@
+.main-heading {
+  margin-top: 120px;
+  text-align: center;
+  color: #fff;
+  h1 {
+    margin-top: 70px;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: 120px;
+    font-family: "GothamPro-Medium";
+  }
+  h2 {
+    margin-top: 50px;
+    font-size: 48px;
+    line-height: 64px;
+  }
+  h3 {
+    font-size: 86px;
+    font-family: "GothamPro-Medium";
+    line-height: 110px;
+  }
+  p {
+    font-size: 24px;
+    color: #A6AFC3;
+    line-height: 64px;
+  }
+  svg {
+    fill: rgb(71, 154, 250);
+  }
+  .train-icon-filled {
+    width: 98px;
+    height: 140px;
+  }
+  .plane-icon-filled {
+    width: 136px;
+    height: 136px;
+  }
+  .btn-block {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 60px -10px 0;
+    .btn {
+      flex-grow: 1;
+      height: 140px;
+      line-height: 140px;
+      font-size: 30px;
+      margin: 0 10px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.visual-scheme {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin: 60px 0 130px 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "GothamPro-Medium";
+  .train-icon {
+    width: 178px;
+    height: 131px;
+  }
+  .plane-icon {
+    width: 178px;
+    height: 107px;
+  }
+  .arrow {
+    position: relative;
+    width: 400px;
+    height: 4px;
+    background-color: #239AFC;
+    border-radius: 5.5px;
+    &--part {
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      background-color: #239AFC;
+      border-radius: 5.5px;
+      &.top-left,
+      &.bottom-right {
+        transform: rotate(-45deg);
+      }
+      &.bottom-left,
+      &.top-right {
+        transform: rotate(45deg);
+      }
+      &.top-left,
+      &.bottom-left {
+        left: -2px;
+      }
+      &.top-right,
+      &.bottom-right {
+        right: -2px;
+      }
+      &.top-left,
+      &.top-right {
+        bottom: 6px;
+      }
+      &.bottom-left,
+      &.bottom-right {
+        top: 6px;
+      }
+    }
+  }
+}

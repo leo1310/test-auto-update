@@ -1,0 +1,87 @@
+.ticket-numbers-block {
+  margin-top: 200px;
+  margin-bottom: 300px;
+  text-align: center;
+
+  .info-text {
+    width: 460px;
+    margin: 50px auto 0;
+    padding-bottom: 40px;
+    font-size: 32px;
+    color: #DFE8FA;
+    line-height: 48px;
+    border-bottom: 1px solid #394765;
+    .attention {
+      font-family: 'GothamPro-Medium';
+    }
+  }
+
+  .total-cost {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #A4ADC2;
+    .price {
+      font-family: 'GothamPro-Medium';
+      font-size: 80px;
+      color: #FFFFFF;
+      span {
+        font-family: 'GothamPro';
+        font-size: 30px;
+        color: #A4ADC2;
+      }
+    }
+  }
+
+  .btn {
+    width: 460px;
+    margin-top: 50px;
+  }
+}
+
+.ticket-numbers {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  .display {
+    width: 196px;
+    height: 120px;
+    margin: 0 10px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 68px;
+    font-family: 'GothamPro-Medium';
+    color: #fff;
+    border-radius: 4px;
+    background-color: #253352;
+    box-sizing: border-box;
+  }
+  .button {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%);
+    box-shadow: inset 0 2px 0 0 #F2F7FF, 0 15px 30px 0 rgba(0,0,0,0.2);
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 48px;
+      height: 8px;
+      margin: -4px 0 0 -24px;
+      background-color: #1B2742;
+      border-radius: 2px;
+    }
+    &:after {transform: rotate(90deg);}
+    &.minus:after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,2057 @@
+@charset "UTF-8";
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  touch-action: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  vertical-align: baseline; 
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; 
+}
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* /Reset */
+@font-face {
+  font-family: 'GothamPro';
+  src: url("../fonts/GothamPro.eot?") format("eot"), url("../fonts/GothamPro.otf") format("opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype"); }
+@font-face {
+  font-family: 'GothamPro-Medium';
+  src: url("../fonts/GothamPro-Medium.eot?") format("eot"), url("../fonts/GothamPro-Medium.otf") format("opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype"), url("../fonts/GothamPro-Medium.svg#GothamPro-Medium") format("svg"); }
+@font-face {
+  font-family: 'GothamPro-Light';
+  src: url("../fonts/GothamPro-Light.eot?") format("eot"), url("../fonts/GothamPro-Light.otf") format("opentype"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light.svg#GothamPro-Light") format("svg"); }
+body {
+  height: 100vh;
+  font-family: "GothamPro-Light";
+  background-color: #1B2742; }
+
+h3 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  padding: 0 10%;
+   }
+
+.svg-sprite {
+  display: none;  
+}
+
+.blue {
+  color: #239AFC; }
+
+.attention {
+  color: #FFB52B; }
+
+/*-----------------container---------------------*/  
+
+@media(min-width: 768px){
+  .container {
+  position: relative;
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin: auto; }}
+@media(min-width: 1366px){
+  .container {
+  padding: 0 60px;
+  }}
+
+
+.btn-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between; }
+
+.btn {
+  height: 100px;
+  border-radius: 4px;
+  line-height: 100px;
+  font-size: 24px;
+  font-family: "GothamPro-Medium";
+  color: #fff;
+  border: none;
+  background: linear-gradient(180deg, #2F3E61 0%, #243250 100%);
+  box-shadow: inset 0 2px 0 0 #3D4C71, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+  .btn:focus {
+    outline: none;
+    box-shadow: none; }
+  .btn__blue {
+    background: linear-gradient(180deg, #28A0FF 0%, #0775EC 100%);
+    box-shadow: inset 0 2px 0 0 #55B3FF, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+  .btn__back, .btn__forward {
+    width: 320px; }
+  .btn__disabled {
+    opacity: 0.5;
+  }  
+
+/*---------------btn-group----------------------*/
+
+@media(min-width: 768px) {
+  .btn-group {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex; }
+  .btn-group--item {
+    flex-grow: 1;
+    height: 50px;
+    font-size: 21px;
+    line-height: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 2px 0 0 #3D4C71, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+    .btn-group--item:first-child {
+      border-radius: 4px 0 0 4px; }
+    .btn-group--item:last-child {
+      border-radius: 0 4px 4px 0; }
+    .btn-group--item:not(.active) {
+      background: linear-gradient(180deg, #2F3E61 0%, #243250 100%); }
+    .btn-group--item.active {
+      border-top: 2px solid #0b142d;
+      border-bottom: 6px solid #1688F5;
+      box-shadow: none;
+      background-color: #253350; }}
+@media(min-width: 1366px) {
+  .btn-group {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex; }
+  .btn-group--item {
+    flex-grow: 1;
+    height: 80px;
+    font-size: 28px;
+    line-height: 80px;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 2px 0 0 #3D4C71, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+    .btn-group--item:first-child {
+      border-radius: 4px 0 0 4px; }
+    .btn-group--item:last-child {
+      border-radius: 0 4px 4px 0; }
+    .btn-group--item:not(.active) {
+      background: linear-gradient(180deg, #2F3E61 0%, #243250 100%); }
+    .btn-group--item.active {
+      border-top: 2px solid #0b142d;
+      border-bottom: 6px solid #1688F5;
+      box-shadow: none;
+      background-color: #253350; }}
+
+
+/*--------------banner-----------------*/
+
+@media(min-width: 768px) {
+  .banner {
+    margin-top: 28px;
+    height: 205px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+     }
+  .banner img {
+    height: 100%;
+   }  }
+@media(min-width: 1366px) {
+  .banner {
+    margin-top: 20px;
+    height: 355px;
+    border-radius: 8px; }}
+
+
+.pagination {
+  width: 135px;
+  margin: 50px auto 0; }
+  .pagination .step {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    background-color: #4E5E80;
+    border-radius: 50%; }
+    .pagination .step:last-child {
+      margin: 0; }
+    .pagination .step.disabled, .pagination .step.active {
+      background: linear-gradient(180deg, #28A0FF 0%, #0775EC 100%);
+      box-shadow: inset 0 2px 0 0 #55B3FF, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+    .pagination .step.disabled {
+      opacity: 0.4; }
+
+
+
+.loader-block {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 460px;
+  margin-left: -230px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;}
+  .loader-block p {
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+   }
+
+.loader {
+  position: relative;
+  width: 460px;
+  height: 36px;
+  margin: 70px auto 0;
+  overflow: hidden;
+  border-radius: 23px;
+  background-color: #33446A; }
+  .loader .scale {
+    position: absolute;
+    display: block;
+    height: 36px;
+    border-radius: 23px;
+    background: linear-gradient(180deg, #28A0FF 0%, #0775EC 100%);
+    box-shadow: inset 0 2px 0 0 #55B3FF, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+
+/*
+== malihu jquery custom scrollbar plugin ==
+Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
+*/
+/*
+CONTENTS:
+	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited).
+	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar.
+	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
+	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars.
+	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars.
+	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
+		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
+*/
+/*
+------------------------------------------------------------------------------------------------------------------------
+1. BASIC STYLE
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media(min-width: 768px) {
+.mCustomScrollbar {
+  -ms-touch-action: pinch-zoom;
+  touch-action: pinch-zoom;
+  /* direct pointer events to js */ }
+
+.mCustomScrollbar.mCS_no_scrollbar, .mCustomScrollbar.mCS_touch_action {
+  -ms-touch-action: auto;
+  touch-action: auto; }
+
+.mCustomScrollBox {
+  /* contains plugin's markup */
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr; }
+
+.mCSB_container {
+  /* contains the original content */
+  overflow: hidden;
+  width: auto;
+  height: auto; }
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+2. VERTICAL SCROLLBAR
+y-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0; }
+
+/* non-visible scrollbar */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px; }
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-left: 0; }
+
+/* RTL direction/left-side scrollbar */
+.mCSB_scrollTools {
+  /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+  position: absolute;
+  width: 16px;
+  height: auto;
+  left: auto;
+  top: 0;
+  right: 84px;
+  bottom: 0; }
+
+.mCSB_outside + .mCSB_scrollTools {
+  right: -26px; }
+
+/* scrollbar position: outside */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools,
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  /* RTL direction/left-side scrollbar */
+  right: auto;
+  left: 0; }
+
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  left: -26px; }
+
+/* RTL direction/left-side scrollbar (scrollbar position: outside) */
+.mCSB_scrollTools .mCSB_draggerContainer {
+  /* contains the draggable element and dragger rail markup */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto; }
+
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 20px 0; }
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 10px;
+  height: 100%;
+  margin-left: 27px;
+  background-color: #313F5F;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+.mCSB_scrollTools .mCSB_dragger {
+  /* the draggable element */
+  height: auto !important;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  /* minimum dragger height */
+  z-index: 1; }
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  /* the dragger element */
+  position: relative;
+  width: 64px;
+  height: 164px;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  text-align: center; }
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  width: 12px;
+  /* auto-expanded scrollbar */ }
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 8px;
+  /* auto-expanded scrollbar */ }
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer; }
+
+.mCSB_scrollTools .mCSB_buttonDown {
+  bottom: 0; }
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+3. HORIZONTAL SCROLLBAR
+x-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_horizontal.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+  margin-bottom: 30px; }
+
+.mCSB_horizontal.mCSB_outside > .mCSB_container {
+  min-height: 100%; }
+
+.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0; }
+
+/* non-visible scrollbar */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  width: auto;
+  height: 16px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  bottom: -26px; }
+
+/* scrollbar position: outside */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer {
+  margin: 0 20px; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 2px;
+  margin: 7px 0; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 30px;
+  /* minimum dragger width */
+  height: 100%;
+  left: 0; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto; }
+
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  height: 12px;
+  /* auto-expanded scrollbar */
+  margin: 2px auto; }
+
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  height: 8px;
+  /* auto-expanded scrollbar */
+  margin: 4px 0; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft {
+  left: 0; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+  right: 0; }
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+4. VERTICAL AND HORIZONTAL SCROLLBARS
+yx-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_container_wrapper {
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+
+.mCSB_container_wrapper > .mCSB_container {
+  padding-right: 30px;
+  padding-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 20px; }
+
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 20px; }
+
+/* non-visible horizontal scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden + .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 0; }
+
+/* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 0; }
+
+/* RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 20px; }
+
+/* non-visible scrollbar/RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 0; }
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px; }
+
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container {
+  padding-right: 0; }
+
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden > .mCSB_container {
+  padding-bottom: 0; }
+
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+  /* non-visible scrollbar */
+  margin-left: 0; }
+
+/* non-visible horizontal scrollbar */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0; }
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+5. TRANSITIONS
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: opacity .2s ease-in-out, background-color .2s ease-in-out; }
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
+  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out; }
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
+------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+----------------------------------------
+6.1 THEMES
+----------------------------------------
+*/
+/* default theme ("light") */
+.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 0;
+  filter: "alpha(opacity=0)";
+  -ms-filter: "alpha(opacity=0)"; }
+
+.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollBox:hover > .mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)"; }
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  border-radius: 50px;
+  background: url("../img/ic_scroll-arrow.svg") no-repeat -3px 7px, linear-gradient(180deg, #2F3E61 0%, #243250 100%);
+  box-shadow: inset 0 2px 0 0 #3D4C71, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  filter: "alpha(opacity=85)";
+  -ms-filter: "alpha(opacity=85)"; }
+
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)"; }
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-image: url(mCSB_buttons.png);
+  /* css sprites */
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)"; }
+
+.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: 0 0;
+  /*
+  sprites locations
+  light: 0 0, -16px 0, -32px 0, -48px 0, 0 -72px, -16px -72px, -32px -72px
+  dark: -80px 0, -96px 0, -112px 0, -128px 0, -80px -72px, -96px -72px, -112px -72px
+  */ }
+
+.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: 0 -20px;
+  /*
+  sprites locations
+  light: 0 -20px, -16px -20px, -32px -20px, -48px -20px, 0 -92px, -16px -92px, -32px -92px
+  dark: -80px -20px, -96px -20px, -112px -20px, -128px -20px, -80px -92px, -96px -92px, -112 -92px
+  */ }
+
+.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: 0 -40px;
+  /*
+  sprites locations
+  light: 0 -40px, -20px -40px, -40px -40px, -60px -40px, 0 -112px, -20px -112px, -40px -112px
+  dark: -80px -40px, -100px -40px, -120px -40px, -140px -40px, -80px -112px, -100px -112px, -120px -112px
+  */ }
+
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: 0 -56px;
+  /*
+  sprites locations
+  light: 0 -56px, -20px -56px, -40px -56px, -60px -56px, 0 -128px, -20px -128px, -40px -128px
+  dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100px -128px, -120px -128px
+  */ }
+
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover {
+  opacity: 0.75;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)"; }
+
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active {
+  opacity: 0.9;
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)"; }
+
+/* theme: "dark" */
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.15); }
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75); }
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.mCS-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px 0; }
+
+.mCS-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -20px; }
+
+.mCS-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -40px; }
+
+.mCS-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -56px; }
+
+}
+
+@media(min-width: 1366px) {
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 100px;
+    height: 223px;
+  }
+  .mCSB_scrollTools .mCSB_draggerRail {
+    margin-left: 44px;
+  }
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: url("../img/ic_scroll-arrow.svg") no-repeat 15px 37px, linear-gradient(180deg, #2F3E61 0%, #243250 100%);
+    box-shadow: inset 0 2px 0 0 #3D4C71, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+}
+/* ---------------------------------------- */
+
+
+/*-------calendar-----------*/
+@media(min-width: 768px) {
+  .calendar-block {
+    width: 440px;
+    margin: 10px auto 0;
+    font-size: 19px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 21px; }
+    .calendar-block p {
+      margin-top: 9px; }
+
+  .ui-datepicker {
+    display: none; }
+    .ui-datepicker .ui-datepicker-title {
+      text-align: center; 
+      font-size: 25px;
+    }
+    .ui-datepicker span.ui-datepicker-year {
+      display: none; }
+
+  .ui-datepicker {
+    margin-top: 9px;
+    box-sizing: border-box;
+    min-width: 270px;
+    z-index: 101 !important; }
+    .ui-datepicker-trigger {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      font-size: 0;
+      background: none;
+      z-index: 1; }
+    .ui-datepicker .ui-datepicker-header {
+      position: relative;
+      font-size: 32px;
+      font-family: "GothamPro";
+      height: 45px;
+      vertical-align: middle;
+      color: #fff;
+      background: #253352; }
+    .ui-datepicker .ui-datepicker-title {
+      line-height: 55px; }
+    .ui-datepicker .ui-datepicker-prev,
+    .ui-datepicker .ui-datepicker-next {
+      position: absolute;
+      display: block;
+      font-size: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+      background: linear-gradient(180deg, #2F3E61 0%, #243250 100%);
+      box-shadow: inset 0 2px 0 0 #3D4C71, 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+      z-index: 2; }
+      .ui-datepicker .ui-datepicker-prev:active:hover,
+      .ui-datepicker .ui-datepicker-next:active:hover {
+        background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%); 
+       }  
+      .ui-datepicker .ui-datepicker-prev.ui-state-disabled:active:hover,
+      .ui-datepicker .ui-datepicker-next.ui-state-disabled:active:hover {
+        box-shadow: none;
+        background: none; } 
+      .ui-datepicker .ui-datepicker-prev:before,
+      .ui-datepicker .ui-datepicker-next:before {
+        content: "";
+        display: block;
+        width: 53px;
+        height: 52px;
+        background: url("../img/ic_btn-arrow.svg") no-repeat 50%; }
+      .ui-datepicker .ui-datepicker-prev.ui-state-disabled,
+      .ui-datepicker .ui-datepicker-next.ui-state-disabled {
+        box-shadow: none;
+        background: none; }
+    .ui-datepicker .ui-datepicker-prev {
+      float: left; }
+      .ui-datepicker .ui-datepicker-prev:before {
+        transform: rotate(180deg); }
+    .ui-datepicker .ui-datepicker-next {
+      right: 0; }
+      .ui-datepicker .ui-datepicker-next:before {
+        content: "›"; }
+    .ui-datepicker .ui-datepicker-calendar {
+      position: relative; }
+    .ui-datepicker .ui-state-highlight span,
+    .ui-datepicker .ui-state-highlight a {
+      margin: 0;
+      width: 25px;
+      height: 25px;
+      line-height: 25px; }
+    .ui-datepicker .ui-state-diapason span,
+    .ui-datepicker .ui-state-diapason a {
+      color: #68b2dd;
+      border-color: #bbdcf0;
+      background: #fafcfe; }
+    .ui-datepicker .ui-datepicker-today span,
+    .ui-datepicker .ui-datepicker-today a {
+      color: #0775EC;
+      background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%); }
+    .ui-datepicker .ui-datepicker-current-day span,
+    .ui-datepicker .ui-datepicker-current-day a,
+    .ui-datepicker .is_select span,
+    .ui-datepicker .is_select a {
+      color: #fff;
+      background: linear-gradient(180deg, #28A0FF 0%, #0775EC 100%); }  
+      .ui-datepicker table {
+      width: 100%;
+      color: #000;
+      border-collapse: collapse;
+      font-size: 12px; }
+      .ui-datepicker table thead {
+        background: #253352; }
+      .ui-datepicker table th {
+        padding: 12px 0 2px; }
+        .ui-datepicker table th span {
+          font-family: "GothamPro";
+          color: #7A88A8;
+          font-size: 19px; }
+      .ui-datepicker table td a, .ui-datepicker table td span {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-top: 8px;
+        padding-top: 17px;
+        text-align: center;
+        border-radius: 4px;
+        font-family: "GothamPro-Medium";
+        font-size: 20px;
+        box-sizing: border-box; }
+      .ui-datepicker table td a {
+        color: #3E4962;
+        text-decoration: none;
+        background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%); }
+      .ui-datepicker table td span {
+        color: #677086;
+        background-color: #253352; }
+    .ui-datepicker th {
+      padding: 5px 0; }
+    .ui-datepicker a {
+      display: block;
+      color: inherit; }
+
+  select.ui-datepicker-year,
+  select.ui-datepicker-month {
+    padding: 3px 4px;
+    font-size: 13px;
+    font-family: "GothamPro";
+    color: #333;
+    border-radius: 2px;
+    border: 1px solid #68b2dd;
+    box-sizing: border-box; }}
+@media(min-width: 1366px) {
+  .calendar-block {
+    width: 540px;
+    margin: 15px auto 30px;
+    font-size: 21px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 22px; }
+    .calendar-block p {
+      margin-top: 15px; }
+
+  .ui-datepicker {
+    display: none; }
+    .ui-datepicker .ui-datepicker-title {
+      font-size: 32px; }
+    .ui-datepicker span.ui-datepicker-year {
+      display: none; }
+
+  .ui-datepicker {
+    margin-top: 10px;
+    box-sizing: border-box;
+    min-width: 270px;
+    z-index: 101 !important; }
+    .ui-datepicker-trigger {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      font-size: 0;
+      background: none;
+      z-index: 1; }
+    .ui-datepicker .ui-datepicker-header {
+      position: relative;
+      font-size: 32px;
+      font-family: "GothamPro";
+      height: 60px;
+      vertical-align: middle;
+      color: #fff;
+      background: #253352; }
+    .ui-datepicker .ui-datepicker-title {
+      line-height: 70px; }
+    .ui-datepicker .ui-datepicker-prev,
+    .ui-datepicker .ui-datepicker-next {
+      position: absolute;
+      display: block;
+      font-size: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 4px;
+      background: linear-gradient(180deg, #2F3E61 0%, #243250 100%);
+      box-shadow: inset 0 2px 0 0 #3D4C71, 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+      z-index: 2; }
+    .ui-datepicker .ui-datepicker-prev:active:hover,
+    .ui-datepicker .ui-datepicker-next:active:hover {
+      background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%); 
+     }  
+    .ui-datepicker .ui-datepicker-prev.ui-state-disabled:active:hover,
+    .ui-datepicker .ui-datepicker-next.ui-state-disabled:active:hover {
+      box-shadow: none;
+      background: none; }  
+      .ui-datepicker .ui-datepicker-prev:before,
+      .ui-datepicker .ui-datepicker-next:before {
+        content: "";
+        display: block;
+        width: 62px;
+        height: 63px;
+        background: url("../img/ic_btn-arrow.svg") no-repeat 50%; }
+      .ui-datepicker .ui-datepicker-prev.ui-state-disabled,
+      .ui-datepicker .ui-datepicker-next.ui-state-disabled {
+        box-shadow: none;
+        background: none; }
+    .ui-datepicker .ui-datepicker-prev {
+      float: left; }
+      .ui-datepicker .ui-datepicker-prev:before {
+        transform: rotate(180deg); }
+    .ui-datepicker .ui-datepicker-next {
+      right: 0; }
+      .ui-datepicker .ui-datepicker-next:before {
+        content: "›"; }
+    .ui-datepicker .ui-datepicker-calendar {
+      position: relative; }
+    .ui-datepicker .ui-state-highlight span,
+    .ui-datepicker .ui-state-highlight a {
+      margin: 0;
+      width: 25px;
+      height: 25px;
+      line-height: 25px; }
+    .ui-datepicker .ui-state-diapason span,
+    .ui-datepicker .ui-state-diapason a {
+      color: #68b2dd;
+      border-color: #bbdcf0;
+      background: #fafcfe; }
+    .ui-datepicker .ui-datepicker-today span,
+    .ui-datepicker .ui-datepicker-today a {
+      color: #0775EC;
+      background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%); }
+    .ui-datepicker .ui-datepicker-current-day span,
+    .ui-datepicker .ui-datepicker-current-day a,
+    .ui-datepicker .is_select span,
+    .ui-datepicker .is_select a {
+      color: #fff;
+      background: linear-gradient(180deg, #28A0FF 0%, #0775EC 100%); }  
+    .ui-datepicker table {
+      width: 100%;
+      color: #000;
+      border-collapse: collapse;
+      font-size: 12px; }
+      .ui-datepicker table thead {
+        background: #253352; }
+      .ui-datepicker table th {
+        padding: 8px 0 0; }
+        .ui-datepicker table th span {
+          font-family: "GothamPro";
+          color: #7A88A8;
+          font-size: 28px; }
+      .ui-datepicker table td a, .ui-datepicker table td span {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        margin-top: 12px;
+        padding-top: 26px;
+        text-align: center;
+        border-radius: 4px;
+        font-family: "GothamPro-Medium";
+        font-size: 29px;
+        box-sizing: border-box; }
+      .ui-datepicker table td a {
+        color: #3E4962;
+        text-decoration: none;
+        background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%); }
+      .ui-datepicker table td span {
+        color: #677086;
+        background-color: #253352; }
+    .ui-datepicker th {
+      padding: 5px 0; }
+    .ui-datepicker a {
+      display: block;
+      color: inherit; }
+
+  select.ui-datepicker-year,
+  select.ui-datepicker-month {
+    padding: 3px 4px;
+    font-size: 13px;
+    font-family: "GothamPro";
+    color: #333;
+    border-radius: 2px;
+    border: 1px solid #68b2dd;
+    box-sizing: border-box; }}
+
+
+.header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 90px;
+  color: #fff;
+  background: linear-gradient(180deg, #061024 0%, #1B2742 100%);
+  box-shadow: inset 0 1px 0 0 #0F1A32;
+  border-bottom: 2px solid #131E38; }
+  .header .container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header .time {
+    font-size: 48px; }
+  .header .logo {}
+  .header .lang a {
+    display: inline-block;
+    width: 45px;
+    height: 30px; }
+    .header .lang a:first-child {
+      margin-right: 25px; }
+  .header .lang__uk {
+    background: url("../img/ic_flag_ukr.svg"); }
+  .header .lang__en {
+    background: url("../img/ic_flag_eng.svg"); }
+
+
+/*--------------main-page----------------*/
+
+@media(min-width: 768px) {
+  .main-heading {
+  margin-top: 30px;
+  text-align: center;
+  color: #fff; }
+  .main-heading h1 {
+    margin-top: 70px;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: 120px;
+    font-family: "GothamPro-Medium"; }
+  .main-heading h2 {
+    margin-top: 50px;
+    font-size: 48px;
+    line-height: 64px; }
+  .main-heading h3 {
+    font-size: 36px;
+    font-family: "GothamPro-Medium";
+    line-height: 40px; }
+  .main-heading p {
+    font-size: 24px;
+    color: #A6AFC3;
+    line-height: 64px; }
+  .main-heading svg {
+    fill: #479afa; }
+  .main-heading .train-icon-filled {
+    width: 80px;
+    height: 90px; }
+  .main-heading .plane-icon-filled {
+    width: 136px;
+    height: 90px; }
+  .main-heading .btn-block {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 42px 0 0; }
+    .main-heading .btn-block .btn {
+      flex-grow: 1;
+      height: 100px;
+      line-height: 100px;
+      font-size: 24px;
+      margin: 0 10px;
+      border-radius: 8px; }
+
+  .visual-scheme {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin: 25px 0 30px 0;
+  font-size: 26px;
+  line-height: 36px;
+  font-family: "GothamPro-Medium"; }
+  .visual-scheme .train-icon {
+    width: 80px;
+    height: 90px; }
+  .visual-scheme .plane-icon {
+    width: 136px;
+    height: 90px; }
+  .visual-scheme .arrow {
+    position: relative;
+    width: 325px;
+    height: 4px;
+    background-color: #239AFC;
+    border-radius: 5.5px; }
+    .visual-scheme .arrow--part {
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      background-color: #239AFC;
+      border-radius: 5.5px; }
+      .visual-scheme .arrow--part.top-left, .visual-scheme .arrow--part.bottom-right {
+        transform: rotate(-45deg); }
+      .visual-scheme .arrow--part.bottom-left, .visual-scheme .arrow--part.top-right {
+        transform: rotate(45deg); }
+      .visual-scheme .arrow--part.top-left, .visual-scheme .arrow--part.bottom-left {
+        left: -2px; }
+      .visual-scheme .arrow--part.top-right, .visual-scheme .arrow--part.bottom-right {
+        right: -2px; }
+      .visual-scheme .arrow--part.top-left, .visual-scheme .arrow--part.top-right {
+        bottom: 6px; }
+      .visual-scheme .arrow--part.bottom-left, .visual-scheme .arrow--part.bottom-right {
+        top: 6px; }    }
+
+@media(min-width: 1366px) {
+  .main-heading {
+  max-width: 1250px;
+  margin: 0 auto; }
+  .main-heading h1 {
+    margin-top: 70px;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: 120px;
+    font-family: "GothamPro-Medium"; }
+  .main-heading h2 {
+    margin-top: 50px;
+    font-size: 48px;
+    line-height: 64px; }
+  .main-heading h3 {
+    font-size: 65px;
+    font-family: "GothamPro-Medium";
+    line-height: 71px; }
+  .main-heading p {
+    font-size: 24px;
+    color: #A6AFC3;
+    line-height: 64px; }
+  .main-heading svg {
+    fill: #479afa; }
+  .main-heading .train-icon-filled {
+    width: 98px;
+    height: 140px; }
+  .main-heading .plane-icon-filled {
+    width: 136px;
+    height: 136px; }
+  .main-heading .btn-block {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 15px -10px 0; }
+    .main-heading .btn-block .btn {
+      flex-grow: 1;
+      height: 140px;
+      line-height: 140px;
+      font-size: 30px;
+      margin: 0 10px;
+      border-radius: 8px; }
+
+  .visual-scheme {
+  margin: 30px 0 45px 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "GothamPro-Medium"; }
+  .visual-scheme .train-icon {
+    width: 178px;
+    height: 131px; }
+  .visual-scheme .plane-icon {
+    width: 178px;
+    height: 107px; }
+  .visual-scheme .arrow {
+    position: relative;
+    width: 400px;
+    height: 4px;
+    background-color: #239AFC;
+    border-radius: 5.5px; }
+    .visual-scheme .arrow--part {
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      background-color: #239AFC;
+      border-radius: 5.5px; }
+      .visual-scheme .arrow--part.top-left, .visual-scheme .arrow--part.bottom-right {
+        transform: rotate(-45deg); }
+      .visual-scheme .arrow--part.bottom-left, .visual-scheme .arrow--part.top-right {
+        transform: rotate(45deg); }
+      .visual-scheme .arrow--part.top-left, .visual-scheme .arrow--part.bottom-left {
+        left: -2px; }
+      .visual-scheme .arrow--part.top-right, .visual-scheme .arrow--part.bottom-right {
+        right: -2px; }
+      .visual-scheme .arrow--part.top-left, .visual-scheme .arrow--part.top-right {
+        bottom: 6px; }
+      .visual-scheme .arrow--part.bottom-left, .visual-scheme .arrow--part.bottom-right {
+        top: 6px; }    }
+
+
+/*-------------timetable-----------------*/
+
+@media(min-width: 768px) {
+  .timetable-block {
+    width: 780px;
+    margin: 25px auto 0; }
+    .timetable-block h3 {
+      margin-bottom: 25px; }
+    .timetable-block + .btn-block {
+      margin-top: 20px; }
+
+  .timetable {
+    height: 355px;
+    overflow: hidden; }
+    .timetable--heading, .timetable--row {
+      width: 78%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #374460; }
+    .timetable--heading {
+      padding-top: 25px;
+      padding-bottom: 15px;
+      color: #7A88A8;
+      font-size: 24px;
+      line-height: 24px; }
+    .departure, .roadtime {
+    flex-basis: 40%;
+      } 
+      .arrival {
+        flex-basis: 20%;
+      }   
+    .timetable--row {
+      align-items: center;
+      height: 50px;
+      font-size: 25px;
+      color: #7A88A8;
+      line-height: 81px; }
+    .timetable--row .time {
+    color: #fff;
+    flex-basis: 19%;
+     }
+    .timetable--row .time-minutes {
+      flex-basis: 19%;
+    } 
+    .timetable .roadtime {
+      width: 170px; }}
+@media(min-width: 1366px) {
+
+  .timetable-block {
+    width: 780px;
+    margin: 20px auto 0; }
+    .timetable-block h3 {
+      margin-bottom: 25px; }
+    .timetable-block + .btn-block {
+      margin-top: 100px; }
+      
+
+  .timetable {
+    height: 530px;
+    overflow: hidden; }
+    .timetable--heading, .timetable--row {
+      width: 78%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #374460; }
+    .timetable--heading {
+      padding-top: 50px;
+      padding-bottom: 15px;
+      color: #7A88A8;
+      font-size: 24px;
+      line-height: 24px; }
+    .timetable--row {
+      align-items: center;
+      height: 80px;
+      font-size: 32px;
+      color: #7A88A8;
+      line-height: 81px; }
+      .timetable--row .time {
+        color: #fff; }
+    .timetable .roadtime {
+      width: 170px; }}
+
+
+/*----------------auth---------------------------*/
+
+@media(min-width: 768px) {
+  .authorization {
+    padding-top: 20px;
+  }
+  .authorization__info {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0 260px;
+  }
+  .authorization__info label {
+    display: inline-block;
+    padding: 23px 0 40px;
+  }
+  .authorization__success {
+    color: #34B455;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 10px;
+  }
+  .authorization div {
+    width: 460px;
+    margin: 0 auto;
+  }
+  .authorization div small{
+    display: none;
+    margin-bottom: 37px;
+    color: #FF3636;
+    margin-top: -17px;
+    font-size: 20px;
+  }
+  .authorization label {
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  .authorization input {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "GothamPro";
+    width: 85%;
+    height: 28px;
+    margin-bottom: 30px;
+    text-align: left;
+    border: none;
+    border-radius: 4px;
+    background-color: #32405F;
+    box-shadow: inset 0 2px 0 0 #0B1223, 0 0px 0px 0 #303E5E;
+    margin-top: 10px;
+    padding: 36px;
+  }
+  .authorization__form .hasError {
+    border: 2px solid #FF3636;
+    background-color: #482A3F;
+  }
+  .authorization input[type=number] {
+    margin-bottom: 40px;
+  }
+  .authorization .btn {
+    width: 100%;
+  }}
+@media(min-width: 1366px) {
+  .authorization {
+    padding-top: 120px;
+  }}
+
+
+/*--------------select-passenger----------------*/
+
+@media(min-width: 768px) {
+
+  h3 {
+    font-size: 32px;
+  }
+  .pagination {
+    margin: 15px auto 0;
+  }
+  .ticket-numbers-block {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .ticket-numbers {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+  .ticket-numbers .display {
+    width: 196px;
+    height: 70px;
+    margin: 0 10px;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 52px;
+    font-family: 'GothamPro-Medium';
+    color: #fff;
+    border-radius: 4px;
+    background-color: #253352;
+    box-sizing: border-box; 
+  }
+  .ticket-numbers .button:active:hover {
+    background: linear-gradient(180deg, #28A0FF 0%, #0775EC 100%);
+    box-shadow: inset 0 2px 0 0 #0775EC, 0 15px 30px 0 rgba(0, 0, 0, 0.2); 
+    } 
+  .info-text {
+    width: 460px;
+      margin: 15px auto 0;
+      padding-bottom: 20px;
+      font-size: 21px;
+      color: #DFE8FA;
+      text-align: center;
+      line-height: 26px;
+      border-bottom: 1px solid #394765;
+  } 
+
+  .total-cost {
+      margin-top: 15px;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #A4ADC2;
+  }
+
+  .total-cost .price {
+        font-family: 'GothamPro-Medium';
+        font-size: 52px;
+        color: #FFFFFF;
+      }
+
+  .total-cost .price span {
+          font-family: 'GothamPro';
+          font-size: 18px;
+          color: #A4ADC2;
+      }
+  .button {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%);
+  box-shadow: inset 0 2px 0 0 #F2F7FF, 0 15px 30px 0 rgba(0,0,0,0.2);
+  }  
+  .button:before,
+  .button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 8px;
+    margin: -4px 0 0 -24px;
+    background-color: #1B2742;
+    border-radius: 2px;
+  }
+  .button:after {transform: rotate(90deg);}
+  .button.minus:after {
+    display: none;
+  }
+  .btn {
+    width: 320px;
+    margin-top: 20px;
+      margin-right: 10px;
+    height: 75px;
+    line-height: 75px;
+  }
+  .btn__payment_container {
+    display: block;
+  }}
+@media(min-width: 1366px) {
+  .ticket-numbers-block {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .button {
+    width: 120px;
+    height: 120px;
+  }
+  .ticket-numbers {
+    margin-top: 40px; }
+  .ticket-numbers .display {
+  height: 100px;
+  padding-top: 22px;
+  font-size: 60px; }
+  .ticket-numbers .button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%);
+    box-shadow: inset 0 2px 0 0 #F2F7FF, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+
+  .ticket-numbers .button:active:hover {
+    background: linear-gradient(180deg, #28A0FF 0%, #0775EC 100%);
+    box-shadow: inset 0 2px 0 0 #0775EC, 0 15px 30px 0 rgba(0, 0, 0, 0.2); 
+    }   
+  .ticket-numbers .button:before, .ticket-numbers .button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 8px;
+    margin: -4px 0 0 -24px;
+    background-color: #1B2742;
+    border-radius: 2px; }
+  .ticket-numbers .button:after {
+    transform: rotate(90deg); }
+  .ticket-numbers .button.minus:after {
+      display: none; }
+
+  .info-text {
+    width: 460px;
+    font-size: 23px;
+    line-height: 29px;
+    margin: 20px auto 0;
+  }
+
+  .total-cost {
+      margin-top: 20px;
+      font-size: 24px;
+      line-height: 1.4;
+      color: #A4ADC2;
+  }
+
+  .total-cost .price {
+        font-family: 'GothamPro-Medium';
+        font-size: 72px;
+        color: #FFFFFF;
+      }
+
+  .total-cost .price span {
+          font-family: 'GothamPro';
+          font-size: 30px;
+          color: #A4ADC2;
+        }
+
+  .btn {
+    width: 460px;
+    margin-top: 20px;
+  }
+  .btn__payment_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn__back {
+    width: 320px;
+  }}
+
+
+/*--------cash-payment----------------------------*/
+
+@media(min-width: 768px) {
+
+  .checkbox__container .btn {
+    margin-right: 0;
+    display: none;
+  } 
+  .payment-block {
+    margin-top: 65px;
+    margin-bottom: 20px;
+    text-align: center;
+  }  
+  .payment-total-cost {
+    width: 320px;
+    margin: 0 auto;
+    border-bottom: 1px solid #394765;
+    padding: 20px;
+    margin-bottom: 35px;
+    line-height: 1.6
+  }
+
+  .checkbox__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 167px;
+  }
+
+  .check-container {
+    display: block;
+    max-width: 190px;
+    position: relative;
+    padding-left: 81px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #DFE8FA;
+    font-family: "GothamPro";
+    font-size: 19px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 50px;
+     width: 50px;
+     border: 2px solid #394765;
+    border-radius: 4px;
+    background-color: #202E4C;
+    box-shadow: inset 0 1px 7px 0 #0C1832, inset 0 2px 0 0 #F2F7FF, 0 3px 20px 0 #303E5E;
+  }
+
+  .check-container input:checked ~ .checkmark {
+    background: linear-gradient(180deg, #28A0FF 0%, #0775EC 100%);
+    border: 2px solid #0775EC;
+    box-shadow: none;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .check-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .check-container .checkmark:after {
+    left: 19px;
+    top: 3px;
+    width: 14px;
+    height: 33px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }}
+@media(min-width: 1366px) {
+
+  .payment-block {
+    margin-bottom: 138px;
+  }
+  .payment-total-cost {
+    width: 460px;
+    padding: 44px 0;
+    margin-bottom: 55px;
+  }  
+  .checkbox__container {
+    min-height: 226px;
+  }
+
+  .check-container {
+    padding-left: 112px;
+    max-width: 24%;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 35px;
+  }
+
+  .checkmark {
+    top: 8px;
+    height: 80px;
+     width: 80px;
+  }
+
+  .check-container .checkmark:after {
+    left: 32px;
+    top: 16px;
+    }}
+
+
+/*--------success-payment---------*/
+
+@media(min-width: 768px) {
+  .success-block {
+    margin-top: 30px; }
+  .success-block .success-icon {
+    display: block;
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 20px; }
+  .success-block .dont-forget {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px; }
+    .success-block .dont-forget .item {
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      line-height: 19px; }
+    .success-block .dont-forget img {
+      display: block;
+      margin: auto; }
+    .success-block .dont-forget .arrow-down-icon {
+      width: 25px;
+      height: 34px;
+      margin-top: 12px;
+      fill: #B6C4E3; }
+    .success-block .dont-forget .take-ticket {
+      width: 130px;
+      margin-top: 7px; }
+  .success-block .info-text {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #a9b0c4; 
+    border-bottom: 0;
+  }
+    .success-block .info-text .attention {
+      font-family: 'GothamPro-Medium'; }
+    .success-block .info-text .btn {
+      width: 83%;
+      margin-top: 20px;
+      margin-right: 0;
+   }}     
+@media(min-width: 1366px) {
+  .success-block {
+  margin-top: 30px; }
+  .success-block .success-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px; }
+    .success-block .dont-forget .item {
+      font-size: 24px; }
+    .success-block .dont-forget .arrow-down-icon {
+      width: 40px;
+      height: 54px;
+      margin-top: 15px;
+    }
+    .success-block .dont-forget .take-ticket {
+      width: 220px;
+      margin-top: 12px; }
+  .success-block .info-text {
+    font-size: 32px;
+    line-height: 42px;
+ }}  
+
+
+/*---------------------pin-code------------------*/
+
+@media(min-width: 768px) {
+  .timer-block {
+    margin-top: 12px;
+    text-align: center; }
+  .timer-block p {
+    color: #fff;
+    font-size: 20px; }
+
+  .timer {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 22px;
+    font-family: "GothamPro-Medium"; }
+  .timer div:not(.timer--item) {
+    margin: 0 10px; }
+  .timer--item {
+    width: 70px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    background: linear-gradient(180deg, #2F3E61 0%, #243250 100%);
+    border-radius: 4px;
+    box-sizing: border-box; }
+
+  .pin-code-block {
+    width: 320px;
+    margin: 0 auto; }
+
+  .lock {
+    margin: 10px 0 0 0; }
+  .lock input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #7A8294;
+    font-size: 32px;
+    border: none;
+    border-radius: 4px;
+    background: #253352; }
+  .lock .dial {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .lock .dial--button {
+      width: 90px;
+      height: 50px;
+      margin-bottom: 13px;
+      text-align: center;
+      font-size: 36px;
+      color: #1B2742;
+      font-family: "GothamPro-Medium";
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%);
+      box-shadow: inset 0 2px 0 0 #F2F7FF, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+      .lock .dial--button:focus {
+        box-shadow: none; }
+  .lock .btn {
+    width: 100%;
+    margin-top: 8px; }     
+  .pin-code__btn_back {
+    width: 200px;}   }    
+@media(min-width: 1366px) {
+  .timer-block {
+    margin-top: 20px;
+    text-align: center; }
+  .timer-block p {
+    color: #fff;
+    font-size: 20px; }
+
+  .timer {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 46px;
+    font-family: "GothamPro-Medium"; }
+  .timer div:not(.timer--item) {
+    margin: 0 10px; }
+  .timer--item {
+    width: 120px;
+    height: 100px;
+    padding-top: 30px;
+    text-align: center;
+    background: linear-gradient(180deg, #2F3E61 0%, #243250 100%);
+    border-radius: 4px;
+    box-sizing: border-box; }
+
+  .pin-code-block {
+    width: 400px;
+    margin: 20px auto 0; }
+
+  .lock {
+    margin: 10px 0 20px 0; }
+  .lock input {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #7A8294;
+    font-size: 50px;
+    border: none;
+    border-radius: 4px;
+    background: #253352; }
+  .lock .dial {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .lock .dial--button {
+      width: 120px;
+      height: 75px;
+      margin-bottom: 13px;
+      text-align: center;
+      font-size: 36px;
+      color: #1B2742;
+      font-family: "GothamPro-Medium";
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      background: linear-gradient(180deg, #E2EBFD 0%, #B0B9C9 100%);
+      box-shadow: inset 0 2px 0 0 #F2F7FF, 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+      .lock .dial--button:focus {
+        box-shadow: none; }
+  .lock .btn {
+    width: 100%;
+    margin-top: 30px; }     }   
+
+
+/*--------------------insert-card------------------*/
+
+@media(min-width: 768px) {
+
+  .insert-card-block {
+    width: 640px;
+    margin: 20px auto 0;
+    text-align: center; }
+  .insert-card-block .arrow-down-icon {
+    display: block;
+    margin: 10px auto 0;
+    width: 32px;
+    height: 55px;
+    fill: #fff; }
+  .insert-card-block img {
+    width: 195px;
+    height: 150px; }}
+@media(min-width: 1366px) {
+
+  .insert-card-block {
+    width: 655px;
+    margin: 25px auto 0;
+    text-align: center; }
+  .insert-card-block .arrow-down-icon {
+    display: block;
+    margin: 25px auto 0;
+    width: 35px;
+    height: 40px;
+    fill: #fff;}
+  .insert-card-block img {
+    width: 340px;
+    height: 250px; }}
+
+
+/*-------------------tech-error------------------*/
+
+@media(min-width: 768px) {
+
+  .tech-error-block {
+    text-align: center;
+    margin-top: 14%;
+  }
+  .tech-error-block img {
+    margin-bottom: 20px
+    
+  }}
+
+
+/*------------------fail-pay-----------------*/
+
+@media(min-width: 768px) {
+  .fail-pay-block {
+    margin: 20px 0 15px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff; }
+  .fail-pay-block p {
+    width: 640px;
+    margin: auto; }
+  .fail-pay-block .attention {
+    margin-top: 12px; }
+  .fail-pay-block .fail-icon {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 25px; }
+  .fail-pay-block .hr {
+    width: 300px;
+    margin: 15px auto;
+    border-top: 1px solid #0e1835;
+    border-bottom: 1px solid #35415f; }
+  .fail-pay-block .btn {
+    margin-top: 20px;
+    padding: 0 38px; }}  
+@media(min-width: 1366px) {
+  .fail-pay-block {
+  margin: 65px 0;
+  }
+  .fail-pay-block .attention {
+    margin-top: 30px; }
+  .fail-pay-block .fail-icon {;
+    margin: 0 auto 50px; }
+  .fail-pay-block .hr {
+    margin: 50px auto; }
+  .fail-pay-block .btn {
+    margin-top: 60px; }}  
+
+
+
+/*--------------------accept-card------------------*/
+
+@media(min-width: 768px) {
+  .accepted-cards {
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+    font-family: "GothamPro-Medium"; }
+  .accepted-cards h5 {
+    color: #FDFDFE;
+    font-size: 19px;
+    line-height: 32px; }
+  .accepted-cards .card-list {
+    width: 300px;
+    margin: auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px; }
+  .accepted-cards .mcrd-icon,
+  .accepted-cards .visa-icon {
+    width: 66px;
+    height: 46px;
+    margin-bottom: 10px; }
+  .accepted-cards .mcrd-icon {
+    background: url("../img/ic_mastercard.svg"); }
+  .accepted-cards .visa-icon {
+    background: url("../img/ic_visa.svg"); }
+} 
+@media(min-width: 1366px) {
+  .accepted-cards {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: "GothamPro-Medium"; }
+  .accepted-cards h5 {
+    color: #FDFDFE;
+    font-size: 24px;
+    line-height: 56px; }
+  .accepted-cards .card-list {
+    width: 300px;
+    margin: auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px; }
+  .accepted-cards .mcrd-icon,
+  .accepted-cards .visa-icon {
+    width: 98px;
+    height: 67px;
+    margin-bottom: 10px; }
+  .accepted-cards .mcrd-icon {
+    background: url("../img/ic_mastercard.svg"); }
+  .accepted-cards .visa-icon {
+    background: url("../img/ic_visa.svg"); }
+} 
+

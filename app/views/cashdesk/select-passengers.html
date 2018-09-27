@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="pagination">
+    <span class="step disabled"></span>
+    <span class="step active"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+  <div class="ticket-numbers-block">
+    <h3 translate="select_number_tickets"></h3>
+    <div class="ticket-numbers">
+      <div class="button minus"></div>
+      <div class="display">1</div>
+      <div class="button plus"></div>
+    </div>
+    <div class="info-text">
+      <p class="attention" translate="pay_attention"></p>
+      <p translate="child_note"></p>
+    </div>
+    <div class="total-cost">
+      <p>
+        <span translate="total"></span>
+      </p>
+      <p class="price">
+        <price id="js-price">80.00</price>
+        <span translate="uah">грн.</span>
+      </p>
+    </div>
+    <div class="btn__payment_container">
+      <button class="btn" id="js-card-payment" translate="card_payment"></button>
+      <button class="btn" id="js-cash-payment" translate="cash_payment"></button>
+    </div>
+  </div>
+  <div class="btn-block">
+    <button class="btn btn__back" id="js-back" translate="back"></button>
+  </div>
+</div>
+<script src="../../js/select-passengers.js"></script>
