@@ -5,8 +5,12 @@ const machineUuid = require('./app/modules/machineUuid.js');
 const contentManager = require('./app/modules/contentManager.js');
 const Store = require('electron-store');
 const store = new Store();
+const { autoUpdater } = require('electron-updater');
 
 let win, language = 'uk';
+
+autoUpdater.autoDownload = true;
+autoUpdater.autoInstallOnAppQuit = true;
 
 function createWindow() {
   win = new BrowserWindow({

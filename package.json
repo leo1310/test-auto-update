@@ -1,12 +1,12 @@
 {
   "name": "KyivBoryspilExpress",
   "productName": "Kyiv Boryspil Express",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "App for terminals wich will be installed in Kyiv Railway Station. App allow get information about schedule of Express Kyiv - Boryspil. Also app allow buy tickets on this Express.",
   "homepage": "https://tickets.ua",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "build -p always",
     "start": "electron .",
     "install": "electron-rebuild",
     "pack": "yarn electron-builder",
@@ -43,8 +43,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "y.mogylskyi",
-        "repo": "uz/terminal"
+        "owner": "leo1310",
+        "repo": "test-auto-update"
       }
     ]
   },
